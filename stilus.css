@@ -1,0 +1,59 @@
+* {box-sizing: border-box;
+padding: 0;
+margin: 0;
+}
+main {
+    max-width: 856px;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+main, header, article, aside, nav, footer, section {
+    border: 1px solid gray;
+    padding: 10px;
+}
+
+header {
+    width: 100%;
+    flex: 0 0 100%;
+}
+nav {
+    width: 20%;
+    flex: 0 0 20%;
+    background-color: rgb(230, 210, 173);
+}
+
+article {
+    background-color: lightblue;
+    width: 60%;
+    flex: 0 0 calc(60% - 20px);
+}
+
+aside{
+    background-color: rgb(200, 230, 173);
+    flex: 0 0 20%;
+}
+footer {
+    width: 100%;
+    flex: 0 0 100%;
+}
+/* dobozok elredezése*/
+article {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+section {
+    flex: 0 0 20%;
+}
+section:nth-child(2) {
+    order: -1;
+}
+section:nth-child(3) {
+    order: -1;
+}
